@@ -33,7 +33,11 @@ ENV/
 
 # Project specific
 yolov3.weights
-detection_results/
+# Allow detection results but exclude other images
+!detection_results/
+!detection_results/*.jpg
+!detection_results/*.jpeg
+!detection_results/*.png
 *.jpg
 *.jpeg
 *.png
